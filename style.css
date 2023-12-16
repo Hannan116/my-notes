@@ -1,0 +1,112 @@
+/* reset and common starts  */
+:root {
+  --primary-color: #0766ad;
+
+  --fourth-color: #f3f3f3;
+
+  --seventh-color: #00adb5;
+  --eighth-color: #f9ed69;
+  --padding: 0.5rem;
+  --transition: all 0.3s;
+  --border-radius: 0.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  padding: var(--padding);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover {
+  background-color: var(--seventh-color);
+  color: white;
+}
+
+/* reset and common ends  */
+.container {
+  height: auto;
+  background-color: var(--primary-color);
+  padding: var(--padding);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.notes-heading h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.notes-heading img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.edit-img {
+  width: 1.5rem;
+  height: 1.25rem;
+  border: none;
+  margin: 0 0.5rem;
+  float: left;
+}
+
+.notes-container {
+  margin: 2rem auto;
+  /* flex-direction: column; */
+  /* border-radius: var(--border-radius); */
+  width: 420px;
+}
+
+.input-box {
+  min-height: 100px;
+  width: 380px;
+  padding: var(--padding);
+  font-size: 1.4rem;
+  border-radius: var(--border-radius);
+  position: relative;
+  margin-top: 1rem;
+  background-color: var(--fourth-color);
+}
+
+.input-box img {
+  width: 2.2rem;
+  height: 2rem;
+  position: absolute;
+  /* bottom: auto; */
+  top: 15px;
+  right: -50px;
+  background-color: var(--eighth-color);
+  padding: 0.2rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  /* background-color: var(--fourth-color); */
+}
+
+.input-box img:hover {
+  transform: scale(1.5);
+}
